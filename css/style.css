@@ -5,6 +5,14 @@
     font-family: 'Rubik', sans-serif;
 }
 
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* --- HEADER --- */
+
 header{
     height: 70px;
     background: #ff6900;
@@ -25,17 +33,6 @@ nav{
 
 }
 
-
-main{
-    margin-top: 100px;
-}
-
-.container{
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-}
-
 nav ul{
     list-style-type: none;
     display: flex;
@@ -53,6 +50,10 @@ nav a{
 
 }
 
+.menu-destra{
+    word-spacing: 1rem;
+}
+
 .menu-destra li{
     padding-left: 8px;
 }
@@ -60,6 +61,15 @@ nav a{
 .menu-centrale > img{
     height: 35px;
 }
+
+
+/* --- MAIN --- */
+
+
+main{
+    margin-top: 100px;
+}
+
 
 main > .container{
     flex-wrap: wrap;
@@ -71,8 +81,6 @@ main > .container{
     margin-bottom: 16px;
 
 }
-
-
 
 .card-image{
     position: relative;
@@ -144,4 +152,40 @@ background: green;
 
 strong{
     color: red;
+}
+
+
+/* --- FOOTER --- */
+
+
+footer{
+    margin-top: 50px;
+    color: white;
+    padding: 30px 0px;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid white;
+}
+
+
+footer > .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot-list > ul{
+    list-style-type: none;
+    padding-top: 10px;
+
+}
+
+.foot-sinistra > h3{
+    padding-top: 30px;
+}
+
+#white{
+    color: white;
+}
+
+.foot-destra > h4{
+    padding-bottom: 10px;
 }
