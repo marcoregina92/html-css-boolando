@@ -26,7 +26,7 @@ nav{
 
 
 main{
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .container{
@@ -47,38 +47,96 @@ nav a{
     text-decoration: none;
 }
 
-.menu-sinistra{
-    padding: ;
+.menu-sinistra li{
+    padding-right: 8px
 
 }
 
-.menu-destra{
-    padding: ;
+.menu-destra li{
+    padding-left: 8px;
 }
 
 .menu-centrale > img{
     height: 35px;
 }
 
-
-.card{
-    width: calc(100% / 3);
-
-}
-
-
 main > .container{
     flex-wrap: wrap;
 }
+
+.card{
+    width: calc(100% / 3);
+    padding: 8px;
+    margin-bottom: 16px;
+
+}
+
+
 
 .card-image{
     position: relative;
 }
 
 .card-image > img{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
 }
 
+
+.card-image .prima-immagine {
+	display: inline-block;
+}
+
+.card-image .seconda-immagine {
+	display: none;
+}
+
+.card-image:hover .prima-immagine {
+	display: none;
+}
+.card-image:hover .seconda-immagine {
+	display: inline-block;
+}
+
+.wishlist {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	background: white;
+	padding: 16px;
+}
+
+
+.wishlist:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+
+.badges {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+
+}
+
+
+.badge {
+    color: white;
+    padding: 8px;
+
+}
+
+.badge-discount {
+    background: red;
+
+}
+
+.badge-eco {
+background: green;
+}
+
+
+#heart-sopra {
+    margin-right: 10px;
+}
